@@ -1,22 +1,30 @@
-package h04;
+package h05;
 
 import java.awt.*;
 import java.applet.*;
 
-public class Opdracht4 extends Applet {
+public class Opdracht2 extends Applet {
+
+    int gewichtValerie;
+    int gewichtJeroen;
+    int gewichtHans;
 
     public void init() {
         setSize(500, 500);
+
+        gewichtValerie = 40;
+        gewichtJeroen = 100;
+        gewichtHans = 80;
 
     }
     public void paint(Graphics g) {
         setBackground(Color.white);
 
         //Diagram
-            // y as
+        // y as
         g.setColor(Color.black);
         g.fillRect(50, 150, 5, 300);
-            // x as
+        // x as
         g.setColor(Color.black);
         g.fillRect(50, 450, 300, 5);
 
@@ -45,7 +53,7 @@ public class Opdracht4 extends Applet {
         g.drawString("Valerie", 80, 480);
 
         g.setColor(Color.magenta);
-        g.fillRect(70, 450, 50, - 40);
+        g.fillRect(70, 450, 50, - gewichtValerie);
 
         //Jeroen
 
@@ -53,7 +61,7 @@ public class Opdracht4 extends Applet {
         g.drawString("Jeroen", 180, 480);
 
         g.setColor(Color. green);
-        g.fillRect(170, 450, 50, - 100);
+        g.fillRect(170, 450, 50, - gewichtJeroen);
 
         //Hans
 
@@ -61,6 +69,6 @@ public class Opdracht4 extends Applet {
         g.drawString("Hans", 280, 480);
 
         g.setColor(Color.blue);
-        g.fillRect(270, 450, 50, - 80);
+        g.fillRect(270, 450, 50, - gewichtHans);
     }
 }
